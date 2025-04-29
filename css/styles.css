@@ -1,3 +1,7 @@
+/* Declaración de codificación de caracteres */
+@charset "utf-8";
+
+
 body {
     font-family: sans-serif;
     margin: 0;
