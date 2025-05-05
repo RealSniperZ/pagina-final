@@ -108,3 +108,8 @@ footer {
     margin-left: 0;
   }
 
+  table{
+    text-align: center;
+    margin: 30px 100px 100px 1000px;
+  }
+
