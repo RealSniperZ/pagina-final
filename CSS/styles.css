@@ -41,9 +41,7 @@ header {
    
 }
 .logo img{
-     max-height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+     max-height: 120px;
 }
 
 
