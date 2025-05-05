@@ -38,11 +38,13 @@ header {
 
 .logo {
     padding: 30px; /* Espacio alrededor del logo */
-    max-height: 150px;
+   
+}
+.logo img{
+     max-height: 150px;
     border-radius: 50%;
     object-fit: cover;
 }
-
 
 
 nav {
