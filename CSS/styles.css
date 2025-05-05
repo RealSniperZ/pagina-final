@@ -20,7 +20,6 @@ header {
 .banner {
     width: 90%; /* O el ancho que desees para el banner */
     height: 200px; /* Una altura inicial, ajústala según tu imagen */
-    background-image: url(imagenes/banner.png); /* Reemplaza con la ruta de tu imagen */
     background-size: cover;
     background-position: center;
     border-radius: 0;
