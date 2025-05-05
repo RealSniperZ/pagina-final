@@ -18,11 +18,11 @@ header {
 }
 
 .banner {
-    width: 90%; /* O el ancho que desees para el banner */
-    height: 200px; /* Una altura inicial, ajústala según tu imagen */
-    background-image: url(/imagenes/banner.png); /* Reemplaza con la ruta de tu imagen */
+    width: 80%; /* O el ancho que desees para el banner */
+    height:150px; /* Una altura inicial, ajústala según tu imagen */
     background-size: cover;
     background-position: center;
+    padding_left: 10px;
     border-radius: 0;
     display: flex; /* Para centrar contenido sobre la imagen si es necesario */
     justify-content: center;
@@ -37,12 +37,13 @@ header {
 }
 
 .logo {
-    padding: 20px; /* Espacio alrededor del logo */
+    padding: 30px; /* Espacio alrededor del logo */
+   
+}
+.logo img{
+     max-height: 120px;
 }
 
-.logo img {
-    max-height: 120px;
-}
 
 nav {
     padding: 20px;
