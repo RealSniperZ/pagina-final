@@ -22,6 +22,7 @@ header {
     height:150px; /* Una altura inicial, ajústala según tu imagen */
     background-size: cover;
     background-position: center;
+    padding_left: 10px;
     border-radius: 0;
     display: flex; /* Para centrar contenido sobre la imagen si es necesario */
     justify-content: center;
