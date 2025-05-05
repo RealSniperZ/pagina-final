@@ -18,8 +18,9 @@ header {
 }
 
 .banner {
+    padding-top: 10px;
     width: 80%; /* O el ancho que desees para el banner */
-    height:150px; /* Una altura inicial, ajústala según tu imagen */
+    height:200px; /* Una altura inicial, ajústala según tu imagen */
     background-size: cover;
     background-position: center;
     padding_left: 10px;
@@ -38,10 +39,10 @@ header {
 
 .logo {
     padding: 30px; /* Espacio alrededor del logo */
-   
 }
 .logo img{
      max-height: 120px;
+     border-radius: 50%;
 }
 
 
@@ -112,4 +113,6 @@ footer {
     text-align: center;
     margin: 30px 100px 100px 1000px;
   }
-
+.mapa{
+    padding-bottom: 10%;
+}
