@@ -39,6 +39,7 @@ header {
 
 .logo {
     padding: 30px; /* Espacio alrededor del logo */
+    cursor: grab;
 }
 .logo img{
      max-height: 120px;
@@ -122,3 +123,4 @@ footer {
     background-color: #0800ff; /* El mismo color del hover, para consistencia */
     font-weight: bold; /* Opcional: Añade negrita */
 }
+
