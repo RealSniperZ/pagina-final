@@ -89,7 +89,7 @@ footer {
     text-align: center;
     padding: 1px;
     position: fixed;
-    bottom: 0px;
+    bottom: 1px;
     width:100%;
 }
 .imagenes_paginas {
@@ -114,5 +114,11 @@ footer {
     margin: 30px 100px 100px 1000px;
   }
 .mapa{
-    padding-bottom: 10%;
+    padding-bottom: 5%;
+    position: static;
+}
+
+.boton.active {
+    background-color: #0800ff; /* El mismo color del hover, para consistencia */
+    font-weight: bold; /* Opcional: Añade negrita */
 }
