@@ -85,30 +85,46 @@ main {
 }
 
 footer {
-    background-color: #b8c0ff; /* Un lila suave */
+    background-color: #b8c0ff;
     color: white;
     text-align: center;
-    padding: 1px;
+    padding: 10px 0;
     position: fixed;
     bottom: 1px;
-    width:100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Espacio entre el texto y los iconos */
+    align-items: center;
 }
+
+footer p {
+    margin: 1px 0;
+}
+
+
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea el texto al centro verticalmente */
+    padding-left:  750px;
+}
+
 .imagenes_paginas {
     display: flex;
-    justify-content: flex-end; /* Alinea los elementos a la derecha */
-    align-items: center; /* Alinea verticalmente los elementos al centro (opcional) */
-  }
-  
-  .icono_redes {
-    width: 30px; /* Ajusta el tamaño deseado */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin-left: 10px; /* Ajusta el espacio entre los iconos */
-  }
-  
-  /* Opcional: Para el primer icono no tener margen a la izquierda */
-  .icono-redes:first-child {
-    margin-left: 0;
-  }
+    align-items: center;
+    gap: 10px;
+}
+
+.icono_redes {
+    width: 30px;
+    height: auto;
+}
 
   table{
     text-align: center;
@@ -123,4 +139,3 @@ footer {
     background-color: #0800ff; /* El mismo color del hover, para consistencia */
     font-weight: bold; /* Opcional: Añade negrita */
 }
-
