@@ -168,3 +168,69 @@ table {
         font-size: 0.8em;
     }
 }
+
+/* Estilos para el formulario de contacto */
+.formulario-contacto {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.formulario-contacto label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"],
+.formulario-contacto input[type="tel"],
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formulario-contacto textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.formulario-contacto input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.formulario-contacto button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+    background-color: #3e8e41;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit;        /* Hereda el color del texto del padre */
+  }
+  
+  a:hover {
+    /* Opcional: Evita el cambio de estilo al pasar el ratón */
+    text-decoration: none;
+    color: inherit;
+  }

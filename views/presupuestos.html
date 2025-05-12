@@ -29,6 +29,32 @@
         <section class="texto-principal">
             <p>Este es el texto principal de mi página web. Aquí puedo incluir información importante, descripciones de mis servicios o cualquier contenido que quiera destacar. ¡Los colores pastel le darán un toque moderno y agradable a la vista!</p>
             <p>Puedo añadir más párrafos e incluso otros elementos como imágenes dentro de esta sección.</p>
+
+            <div class="formulario-contacto">
+                <h2>Solicita más información</h2>
+                <form id="miFormulario" action="../views/check_verify.html" method="POST">  <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <div id="nombre-error" class="error-message"></div> <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                     <div id="email-error" class="error-message"></div>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                     <div id="telefono-error" class="error-message"></div>
+
+                    <label for="informacion">Solicite más información:</label>
+                    <textarea id="informacion" name="informacion" rows="4" required></textarea>
+                     <div id="informacion-error" class="error-message"></div>
+
+                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                    <label for="privacidad">Acepto la política de privacidad de la empresa</label>
+                     <div id="privacidad-error" class="error-message"></div>
+
+                    <button type="submit">Enviar</button>
+                    
+                </form>
+                <br><br><br>
+            </div>
         </section>
     </main>
 
