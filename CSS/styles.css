@@ -1,62 +1,64 @@
 /* Declaración de codificación de caracteres */
 @charset "utf-8";
 
-
 body {
     font-family: sans-serif;
     margin: 0;
-    background-color: #f0f8ea; /* Un verde menta suave */
+    background-color: #f0f8ea;
     color: #555;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    padding: 0; /* Eliminamos el padding del header */
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: auto; /* Ajustamos la altura automáticamente según la imagen */
+    height: auto;
 }
 
 .banner {
     padding-top: 10px;
-    width: 80%; /* O el ancho que desees para el banner */
-    height:200px; /* Una altura inicial, ajústala según tu imagen */
+    width: 80%;
+    height: 200px;
     background-size: cover;
     background-position: center;
     padding_left: 10px;
     border-radius: 0;
-    display: flex; /* Para centrar contenido sobre la imagen si es necesario */
+    display: flex;
     justify-content: center;
     align-items: center;
-    color: white; /* Color del texto sobre la imagen */
-    font-size: 2em; /* Tamaño del texto sobre la imagen */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .banner h1 {
-    margin: 0; /* Elimina el margen predeterminado del h1 */
+    margin: 0;
 }
 
 .logo {
-    padding: 30px; /* Espacio alrededor del logo */
+    padding: 30px;
     cursor: grab;
 }
-.logo img{
-     max-height: 120px;
-     border-radius: 50%;
-}
 
+.logo img {
+    max-height: 120px;
+    border-radius: 50%;
+}
 
 nav {
     padding: 20px;
     display: flex;
     gap: 15px;
     justify-content: center;
-    background-color: #e0f2f7; /* Un celeste muy claro */
+    background-color: #e0f2f7;
 }
 
 .boton {
-    background-color: #f5c6cb; /* Un rosa empolvado */
+    background-color: #f5c6cb;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -72,6 +74,7 @@ nav {
 
 main {
     padding: 20px;
+    flex: 1;
 }
 
 .texto-principal {
@@ -80,8 +83,6 @@ main {
     border-radius: 10px;
     box-shadow: 1 2px 5px rgba(0, 0, 0, 0.1);
     line-height: 1.6;
-    
-    
 }
 
 footer {
@@ -90,18 +91,17 @@ footer {
     text-align: center;
     padding: 10px 0;
     position: fixed;
-    bottom: 1px;
+    bottom: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Espacio entre el texto y los iconos */
+    justify-content: space-between;
     align-items: center;
 }
 
 footer p {
-    margin: 1px 0;
+    margin: 5px 0;
+    font-size: 0.9em;
 }
-
-
 
 footer a {
     color: white;
@@ -111,31 +111,60 @@ footer a {
 .footer-left {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Alinea el texto al centro verticalmente */
-    padding-left:  750px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left a {
+    color: rgb(8, 0, 255); /* Color azul claro para el enlace "Aviso Legal" */
 }
 
 .imagenes_paginas {
     display: flex;
     align-items: center;
     gap: 10px;
+    padding: 0 20px;
 }
 
 .icono_redes {
-    width: 30px;
+    width: 25px;
     height: auto;
 }
 
-  table{
+table {
     text-align: center;
     margin: 30px 100px 100px 1000px;
-  }
-.mapa{
+}
+
+.mapa {
     padding-bottom: 5%;
     position: static;
 }
 
 .boton.active {
-    background-color: #0800ff; /* El mismo color del hover, para consistencia */
-    font-weight: bold; /* Opcional: Añade negrita */
+    background-color: #0800ff;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-left {
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .imagenes_paginas {
+        margin-top: 10px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer p {
+        font-size: 0.8em;
+    }
 }
