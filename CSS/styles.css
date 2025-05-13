@@ -35,6 +35,12 @@ header {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.banner img { /* Para que la imagen se ajuste al banner */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cubre el contenedor manteniendo la proporción */
+}
+
 .banner h1 {
     margin: 0;
 }
@@ -66,6 +72,9 @@ nav {
     cursor: pointer;
     font-size: 1em;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+    /* Quitar subrayado */
+    /* display: block;  O  display: inline-block;  Si quieres que ocupen más espacio */
 }
 
 .boton:hover {
@@ -287,7 +296,8 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    padding: 20px; /* Añadido padding para separar del borde del main */
+    padding: 20px;
+    /* Añadido padding para separar del borde del main */
 }
 
 .producto {
@@ -312,30 +322,4 @@ a:hover {
 .producto p {
     color: #666;
     line-height: 1.4;
-}
-
-.producto ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    color: #666;
-}
-
-#seccion-contacto {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#seccion-contacto p {
-    margin-bottom: 15px;
-}
-
-#seccion-contacto a {
-    color: #007bff;
-    text-decoration: underline;
-}
-
-#seccion-contacto a:hover {
-    color: #0056b3;
 }
