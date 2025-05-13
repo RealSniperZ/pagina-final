@@ -117,7 +117,8 @@ footer a {
 }
 
 .footer-left a {
-    color: rgb(8, 0, 255); /* Color azul claro para el enlace "Aviso Legal" */
+    color: rgb(8, 0, 255);
+    /* Color azul claro para el enlace "Aviso Legal" */
 }
 
 .imagenes_paginas {
@@ -225,12 +226,115 @@ table {
 }
 
 a {
-    text-decoration: none; /* Quita el subrayado */
-    color: inherit;        /* Hereda el color del texto del padre */
-  }
-  
-  a:hover {
+    text-decoration: none;
+    /* Quita el subrayado */
+    color: inherit;
+    /* Hereda el color del texto del padre */
+}
+
+a:hover {
     /* Opcional: Evita el cambio de estilo al pasar el ratón */
     text-decoration: none;
     color: inherit;
-  }
+}
+
+/* AÑADIDO PARA LAS SECCIONES */
+
+.seccion {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+}
+
+#seccion-principal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#seccion-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.servicio {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.servicio img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+}
+
+.servicio h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.servicio p {
+    color: #666;
+    line-height: 1.4;
+}
+
+#seccion-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.producto {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.producto p {
+    color: #666;
+    line-height: 1.4;
+}
+
+.producto ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #666;
+}
+
+#seccion-contacto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#seccion-contacto p {
+    margin-bottom: 15px;
+}
+
+#seccion-contacto a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+#seccion-contacto a:hover {
+    color: #0056b3;
+}
