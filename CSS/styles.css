@@ -14,6 +14,8 @@ body {
 
 /* Estilos para el encabezado principal */
 header {
+    margin-left: 10%;
+    margin-bottom: 1%;
     padding: 0;
     display: flex; /* Contenedor flexible para alinear elementos */
     justify-content: space-between; /* Distribuye el espacio entre los elementos */
