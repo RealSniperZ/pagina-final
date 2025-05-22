@@ -40,6 +40,7 @@ header {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Estilos para la imagen dentro del banner */
 .banner img {
     width: 100%;
     height: 100%;
@@ -59,6 +60,7 @@ header {
     cursor:pointer ;
 }
 
+/* Estilos para la imagen del logo */
 .logo img {
     max-height: 120px;
     border-radius: 50%;
@@ -88,6 +90,7 @@ nav {
     text-decoration: none;
 }
 
+/* Estilo del botón al pasar el cursor */
 .boton:hover {
     background-color: #989898;
 }
@@ -213,15 +216,18 @@ table {
 
 /* Responsividad para pantallas medianas */
 @media screen and (max-width: 768px) {
+    /* Ajustes del pie de página para pantallas medianas */
     footer {
         flex-direction: column;
     }
 
+    /* Ajustes de la sección izquierda del pie para pantallas medianas */
     .footer-left {
         margin: 0 auto;
         padding: 10px;
     }
 
+    /* Ajustes del contenedor de imágenes/iconos para pantallas medianas */
     .imagenes_paginas {
         margin-top: 10px;
         padding: 10px;
@@ -230,6 +236,7 @@ table {
 
 /* Responsividad para pantallas pequeñas */
 @media screen and (max-width: 480px) {
+    /* Ajustes del texto del pie de página para pantallas pequeñas */
     footer p {
         font-size: 0.8em;
     }
@@ -244,12 +251,14 @@ table {
     background-color: #f9f9f9;
 }
 
+/* Estilos para las etiquetas del formulario de contacto */
 .formulario-contacto label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
+/* Estilos para campos de entrada y área de texto del formulario */
 .formulario-contacto input[type="text"],
 .formulario-contacto input[type="email"],
 .formulario-contacto input[type="tel"],
@@ -262,15 +271,18 @@ table {
     box-sizing: border-box;
 }
 
+/* Estilos específicos para el área de texto del formulario */
 .formulario-contacto textarea {
     resize: vertical;
     min-height: 100px;
 }
 
+/* Estilos para casillas de verificación del formulario */
 .formulario-contacto input[type="checkbox"] {
     margin-right: 5px;
 }
 
+/* Estilos para el botón de envío del formulario */
 .formulario-contacto button {
     background-color: #4CAF50;
     color: white;
@@ -280,6 +292,7 @@ table {
     cursor: pointer;
 }
 
+/* Estilo del botón de envío del formulario al pasar el cursor */
 .formulario-contacto button:hover {
     background-color: #3e8e41;
 }
@@ -297,6 +310,7 @@ a {
     color: inherit;
 }
 
+/* Estilo general para enlaces al pasar el cursor */
 a:hover {
     text-decoration: none;
     color: inherit;
@@ -325,6 +339,7 @@ a:hover {
     gap: 20px;
 }
 
+/* Estilos para los títulos H2 dentro de las secciones */
 section h2{
     font-weight: 900;
 
@@ -400,4 +415,3 @@ section h2{
 ul li {
     margin-bottom: 20px;
 }
-

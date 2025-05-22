@@ -1,66 +1,112 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Define el tipo de documento como HTML5 -->
 <html lang="es">
+    <!-- Elemento raíz, indica que el idioma de la página es español -->
 
+    <!-- Cabecera del documento, contiene metadatos e enlaces a recursos -->
     <head>
+        <!-- Especifica la codificación de caracteres (importante para acentos y ñ) -->
         <meta charset="UTF-8">
+        <!-- Configura cómo se muestra la página en diferentes dispositivos (móviles, tablets) -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Indica a los buscadores que no sigan los enlaces de esta página -->
         <meta name="robots" content="NOFOLLOW">
+        <!-- Nombre del autor de la página -->
         <meta name="Author" content="Gabriel">
+        <!-- Declara el idioma del contenido (redundante si ya está en <html>) -->
         <meta name="lang" content="es">
-        <title>CONTACTO</title> <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
-        <link rel="icon" type="imae/x-icon" href="/imagenes/icono.png">
+        <!-- Título que aparece en la pestaña del navegador -->
+        <title>CONTACTO</title>
+        <!-- Enlaza la hoja de estilos CSS para dar diseño a la página -->
+        <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+        <!-- Define el icono (favicon) que se muestra en la pestaña del navegador -->
+        <link rel="icon" type="image/x-icon" href="../imagenes/icono.png">
     </head>
+    <!-- Cuerpo del documento, contiene todo el contenido visible de la página -->
     <body>
+        <!-- Sección de cabecera principal de la página -->
         <header>
+            <!-- Imagen de banner -->
             <img class="banner" src="../imagenes/banner.png"
-                alt="Banner de la empresa"> <div class="logo">
+                alt="Banner de la empresa">
+            <!-- Contenedor para el logo -->
+            <div class="logo">
+                <!-- Imagen del logo -->
                 <img src="../imagenes/icono.png" alt="Logotipo de la empresa">
             </div>
         </header>
+        <!-- Menú de navegación principal -->
         <nav>
             <a href="../index.html" class="boton">Inicio</a>
+            <!-- Enlace a la página de Inicio -->
             <a href="../views/contacto.html" class="boton active">Contacto</a>
+            <!-- Enlace a la página actual (Contacto), marcado como activo -->
             <a href="../views/presupuestos.html" class="boton">Presupuesto</a>
+            <!-- Enlace a la página de Presupuestos -->
             <a href="../views/productos.html" class="boton">Productos</a>
+            <!-- Enlace a la página de Productos -->
         </nav>
 
+        <!-- Contenido principal de la página -->
         <main>
+            <!-- Sección con la información de contacto principal -->
             <section class="texto-principal">
                 <h2>Información de Contacto</h2> <p>Somos una empresa
                     responsable del sector que nos corresponde. Nuestros medios
                     de contacto son los siguientes:</p>
-                <p>CORREO ELECTRONICO: <a
+                <!-- El título y este párrafo parecen correctos -->
+                <p>CORREO ELECTRÓNICO: <a
                         href="mailto:correoprueba@suggest.es">correoprueba@suggest.es</a></p>
-                <p>TELEFONO: <a href="tel:666666666">666 666 666</a></p>
+                <p>TELÉFONO: <a href="tel:666666666">666 666 666</a></p>
             </section>
-            <section class="mapa-ubicacion"> <h2>Nuestra Ubicación</h2> <img
+            <!-- Sección para mostrar la ubicación en un mapa -->
+            <section class="mapa-ubicacion">
+                <h2>Nuestra Ubicación</h2>
+                <!-- Imagen del mapa -->
+                <img
                     class="mapa" src="../imagenes/map.png"
-                    alt="Mapa de nuestra ubicación"> 
-                <h3><a href="https://maps.app.goo.gl/9SxY4ejb3ahQrMZTA">Av. de Hytasa, 71, 41006 Sevilla</a></h3>
-                </section>
+                    alt="Mapa de nuestra ubicación">
+                <!-- Dirección enlazada a Google Maps -->
+                <h3><a href="https://maps.app.goo.gl/9SxY4ejb3ahQrMZTA">Av. de
+                        Hytasa, 71, 41006 Sevilla</a></h3>
+            </section>
         </main>
 
-   <footer>
-        <div class="footer-left">
-            <p>&copy; 2025 </p>
-            <p> Av. de Hytasa, 71, 41006 Sevilla </p>
-            <a href="../views/aviso-legal.html">Aviso Legal</a>
-        </div>
-        <div class="imagenes_paginas">
-            <a href="https://www.facebook.com/?locale=es_ES" class="icono_redes_container">
-                <div class="icono_redes_circulo"></div>
-                <img class="icono_redes" src="../imagenes/face.png" alt="Facebook">
-            </a>
-            <a href="https://www.instagram.com/" class="icono_redes_container">
-                <div class="icono_redes_circulo"></div>
-                <img class="icono_redes" src="../imagenes/instagram.png" alt="Instagram">
-            </a>
-            <a href="https://x.com/home?lang=es" class="icono_redes_container">
-                <div class="icono_redes_circulo"></div>
-                <img class="icono_redes" src="../imagenes/x.png" alt="Twitter">
-            </a>
-        </div>
-    </footer>
+        <!-- Pie de página del sitio -->
+        <footer>
+            <!-- Sección izquierda del pie de página con información de copyright y dirección -->
+            <div class="footer-left">
+                <p>&copy; 2025 </p> <!-- Información de copyright -->
+                <p> Av. de Hytasa, 71, 41006 Sevilla </p>
+                <!-- Dirección física -->
+                <a href="../views/aviso-legal.html">Aviso Legal</a>
+                <!-- Enlace al aviso legal -->
+            </div>
+            <!-- Sección para iconos de redes sociales -->
+            <div class="imagenes_paginas">
+                <!-- Enlace a Facebook -->
+                <a href="https://www.facebook.com/?locale=es_ES"
+                    class="icono_redes_container">
+                    <div class="icono_redes_circulo"></div>
+                    <img class="icono_redes" src="../imagenes/face.png"
+                        alt="Facebook">
+                </a>
+                <!-- Enlace a Instagram -->
+                <a href="https://www.instagram.com/"
+                    class="icono_redes_container">
+                    <div class="icono_redes_circulo"></div>
+                    <img class="icono_redes" src="../imagenes/instagram.png"
+                        alt="Instagram">
+                </a>
+                <!-- Enlace a Twitter (X) -->
+                <a href="https://x.com/home?lang=es"
+                    class="icono_redes_container">
+                    <div class="icono_redes_circulo"></div>
+                    <img class="icono_redes" src="../imagenes/x.png"
+                        alt="Twitter">
+                </a>
+            </div>
+        </footer>
+        <!-- Fin del cuerpo del documento -->
     </body>
 
 </html>

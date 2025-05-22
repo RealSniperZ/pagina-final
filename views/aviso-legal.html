@@ -1,25 +1,40 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Define el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Elemento raíz, indica que el idioma de la página es español -->
+    <!-- Cabecera del documento, contiene metadatos e enlaces a recursos -->
     <head>
+        <!-- Especifica la codificación de caracteres (importante para acentos y ñ) -->
         <meta charset="UTF-8">
+        <!-- Configura cómo se muestra la página en diferentes dispositivos (móviles, tablets) -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Título que aparece en la pestaña del navegador -->
         <title>Aviso Legal</title>
+        <!-- Enlaza la hoja de estilos CSS para dar diseño a la página -->
         <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
-        <link rel="icon" type="imae/x-icon" href="/imagenes/icono.png">
+        <!-- Define el icono (favicon) que se muestra en la pestaña del navegador -->
+        <link rel="icon" type="image/x-icon" href="../imagenes/icono.png"> <!-- Corregido: type="image/x-icon" y ruta relativa "../" -->
     </head>
+    <!-- Cuerpo del documento, contiene todo el contenido visible de la página -->
     <body>
+        <!-- Sección de cabecera principal de la página -->
         <header>
+            <!-- Imagen de banner -->
             <img class="banner" src="../imagenes/banner.png"
                 alt="Banner de la empresa">
+            <!-- Contenedor para el logo -->
             <div class="logo">
+                <!-- Enlace en el logo que lleva a la página de inicio -->
                 <a href="../index.html"><img src="../imagenes/icono.png"
                         alt="Logotipo de la empresa"></a>
             </div>
         </header>
+        <!-- Contenido principal de la página -->
         <main>
+            <!-- Sección principal que contiene el texto del aviso legal -->
             <section class="texto-principal">
+                <!-- Título principal de la sección -->
                 <h2>Aviso Legal</h2>
 
+                <!-- Subsección: Datos Identificativos -->
                 <h3>1. Datos Identificativos</h3>
                 <p>
                     En cumplimiento con el deber de información recogido en el
@@ -27,6 +42,7 @@
                     de la Sociedad de la Información y del Comercio Electrónico,
                     a continuación, se reflejan los siguientes datos:
                 </p>
+                <!-- Lista con los datos del titular del sitio web -->
                 <ul>
                     <li><strong>Titular:</strong> [CreatorWebSite]</li>
                     <li><strong>Domicilio Social:</strong> Calle Alfonso XIII,
@@ -37,6 +53,7 @@
                     <li><strong>Teléfono de Contacto:</strong> [650403070]</li>
                 </ul>
 
+                <!-- Subsección: Condiciones de Uso -->
                 <h3>2. Condiciones de Uso</h3>
                 <p>
                     La utilización del sitio web atribuye la condición de
@@ -50,6 +67,7 @@
                     generalmente aceptadas y el orden público.
                 </p>
 
+                <!-- Subsección: Propiedad Intelectual e Industrial -->
                 <h3>3. Propiedad Intelectual e Industrial</h3>
                 <p>
                     Todos los contenidos del sitio web, incluyendo, a título
@@ -74,6 +92,7 @@
                     titularidad de [webcreatorsoftware].
                 </p>
 
+                <!-- Subsección: Exclusión de Responsabilidad -->
                 <h3>4. Exclusión de Responsabilidad</h3>
                 <p>
                     [webcreatorsoftware] no se hace responsable, en ningún caso,
@@ -85,6 +104,7 @@
                     las medidas tecnológicas necesarias para evitarlo.
                 </p>
 
+                <!-- Subsección: Enlaces (Links) -->
                 <h3>5. Enlaces (Links)</h3>
                 <p>
                     En el caso de que en el sitio web se dispusiesen enlaces o
@@ -100,12 +120,14 @@
                     de Internet.
                 </p>
 
+                <!-- Subsección: Protección de Datos -->
                 <h3>6. Protección de Datos</h3>
                 <p>
                     En cumplimiento con la normativa vigente en materia de
-                    Protección de Datos,
-                </p>
+                    Protección de Datos.
+                </p> <!-- Este párrafo parece incompleto, podría necesitar más contenido -->
 
+                <!-- Subsección: Legislación Aplicable y Jurisdicción -->
                 <h3>7. Legislación Aplicable y Jurisdicción</h3>
                 <p>
                     Las relaciones entre [webcreatorsoftware] y el Usuario se
@@ -117,25 +139,31 @@
             </section>
         </main>
 
+        <!-- Pie de página del sitio -->
         <footer>
+            <!-- Sección izquierda del pie de página con información de copyright y dirección -->
             <div class="footer-left">
-                <p>&copy; 2025 </p>
-                <p> Av. de Hytasa, 71, 41006 Sevilla </p>
-                <a href="../views/aviso-legal.html">Aviso Legal</a>
+                <p>&copy; 2025 </p> <!-- Información de copyright -->
+                <p> Av. de Hytasa, 71, 41006 Sevilla </p> <!-- Dirección física -->
+                <a href="../views/aviso-legal.html">Aviso Legal</a> <!-- Enlace a la página actual (Aviso Legal) -->
             </div>
+            <!-- Sección para iconos de redes sociales -->
             <div class="imagenes_paginas">
+                <!-- Enlace a Facebook -->
                 <a href="https://www.facebook.com/?locale=es_ES"
                     class="icono_redes_container">
                     <div class="icono_redes_circulo"></div>
                     <img class="icono_redes" src="../imagenes/face.png"
                         alt="Facebook">
                 </a>
+                <!-- Enlace a Instagram -->
                 <a href="https://www.instagram.com/"
                     class="icono_redes_container">
                     <div class="icono_redes_circulo"></div>
                     <img class="icono_redes" src="../imagenes/instagram.png"
                         alt="Instagram">
                 </a>
+                <!-- Enlace a Twitter (X) -->
                 <a href="https://x.com/home?lang=es"
                     class="icono_redes_container">
                     <div class="icono_redes_circulo"></div>
@@ -144,5 +172,6 @@
                 </a>
             </div>
         </footer>
+    <!-- Fin del cuerpo del documento -->
     </body>
 </html>
