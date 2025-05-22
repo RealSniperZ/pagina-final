@@ -5,16 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Aviso Legal</title>
         <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+        <link rel="icon" type="imae/x-icon" href="/imagenes/icono.png">
     </head>
     <body>
         <header>
-
-            <img class="banner" src="../imagenes/banner.png" alt="Banner">
-            
-            <!--esto hara que el logo se convierta en un boton funcional que al clicar en el nos dirija de nuevo al index-->
-            <a href="../index.html"><div class="logo"><img src="../imagenes/icono.png" alt="Icono"></div></a>
+            <img class="banner" src="../imagenes/banner.png"
+                alt="Banner de la empresa">
+            <div class="logo">
+                <a href="../index.html"><img src="../imagenes/icono.png"
+                        alt="Logotipo de la empresa"></a>
+            </div>
         </header>
-
         <main>
             <section class="texto-principal">
                 <h2>Aviso Legal</h2>
@@ -119,17 +120,28 @@
         <footer>
             <div class="footer-left">
                 <p>&copy; 2025 </p>
-                <p>Calle alfonso XIII 41009 sevilla</p>
+                <p> Av. de Hytasa, 71, 41006 Sevilla </p>
                 <a href="../views/aviso-legal.html">Aviso Legal</a>
             </div>
             <div class="imagenes_paginas">
-                <a href="https://www.facebook.com/?locale=es_ES"><img
-                        class="icono_redes" src="../imagenes/face.png"
-                        alt="Facebook"></a>
-                <a href="https://www.instagram.com/"><img class="icono_redes"
-                        src="../imagenes/instagram.png" alt="Instagram"></a>
-                <a href="https://x.com/home?lang=es"><img class="icono_redes"
-                        src="../imagenes/x.png" alt="Twitter"></a>
+                <a href="https://www.facebook.com/?locale=es_ES"
+                    class="icono_redes_container">
+                    <div class="icono_redes_circulo"></div>
+                    <img class="icono_redes" src="../imagenes/face.png"
+                        alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/"
+                    class="icono_redes_container">
+                    <div class="icono_redes_circulo"></div>
+                    <img class="icono_redes" src="../imagenes/instagram.png"
+                        alt="Instagram">
+                </a>
+                <a href="https://x.com/home?lang=es"
+                    class="icono_redes_container">
+                    <div class="icono_redes_circulo"></div>
+                    <img class="icono_redes" src="../imagenes/x.png"
+                        alt="Twitter">
+                </a>
             </div>
         </footer>
     </body>

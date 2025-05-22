@@ -3,13 +3,13 @@
 
 /* Estilos generales para el cuerpo de la página */
 body {
-    font-family: sans-serif; /* Fuente del texto */
-    margin: 0; /* Elimina el margen predeterminado del navegador */
-    background-color: #f0f8ea; /* Color de fondo suave */
-    color: #555; /* Color del texto general */
-    display: flex; /* Hace que el cuerpo sea un contenedor flexible */
-    flex-direction: column; /* Los elementos hijos se apilan en columna */
-    min-height: 100vh; /* Altura mínima igual al alto de la ventana */
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #48D1CC;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Estilos para el encabezado principal */
@@ -17,86 +17,86 @@ header {
     margin-left: 10%;
     margin-bottom: 1%;
     padding: 0;
-    display: flex; /* Contenedor flexible para alinear elementos */
-    justify-content: space-between; /* Distribuye el espacio entre los elementos */
-    align-items: center; /* Centra verticalmente */
-    height: auto; /* Altura automática basada en el contenido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    
 }
 
 /* Banner principal de la página */
 .banner {
-    padding-top: 10px;
-    width: 80%;
-    height: 200px;
-    background-size: cover; /* La imagen cubre todo el contenedor */
-    background-position: center; /* Centra la imagen */
-    padding-left: 10px;
+    padding-top: 1%;
+    width: 85%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
     border-radius: 0;
     display: flex;
-    justify-content: center; /* Centra horizontalmente el contenido */
-    align-items: center; /* Centra verticalmente */
-    color: white; /* Color del texto */
-    font-size: 2em; /* Tamaño grande para el texto */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejor visibilidad */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Imagen dentro del banner */
 .banner img {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    height: 100%; /* Ocupa toda la altura del contenedor */
-    object-fit: cover; /* La imagen mantiene su proporción y cubre el área */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     
 }
 
 /* Título dentro del banner */
 .banner h1 {
-    margin: 0; /* Elimina margen predeterminado */
+    font-weight: 900;
+    margin: 0;
 }
 
 /* Logo de la página */
 .logo {
-    padding: 30px;
-    cursor: grab; /* Cursor tipo "mano" para indicar que se puede mover */
+    padding: 4%;
+    cursor:pointer ;
 }
 
-/* Imagen del logo */
 .logo img {
     max-height: 120px;
-    border-radius: 50%; /* Hace la imagen redonda */
+    border-radius: 50%;
 }
 
 /* Barra de navegación */
 nav {
+    margin-left: 35%;
+    margin-right: 30%;
     padding: 20px;
     display: flex;
-    gap: 15px; /* Espacio entre los elementos */
+    gap: 15px;
     justify-content: center;
-    background-color: #e0f2f7; /* Fondo celeste claro */
+    background-color: #1dc1bb;
 }
 
 /* Botones personalizados */
 .boton {
-    background-color: #f5c6cb;
+    background-color: #403e3e;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
-    transition: background-color 0.3s ease; /* Transición suave */
-    text-decoration: none; /* Quita subrayado */
+    transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
-/* Estilo del botón al pasar el cursor */
 .boton:hover {
-    background-color: #e3a8ad;
+    background-color: #989898;
 }
 
 /* Contenido principal de la página */
 main {
     padding: 20px;
-    flex: 1; /* El contenido principal ocupa el espacio disponible */
-    margin-bottom: 80px; /*añade un salto de linea para que no queden juntos el main y el footer*/
+    flex: 1;
+    margin-bottom: 0;
 }
 
 /* Sección principal de texto */
@@ -105,21 +105,21 @@ main {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 1 2px 5px rgba(0, 0, 0, 0.1);
-    line-height: 1.6; /* Espaciado entre líneas */
+    line-height: 1.6;
 }
 
 /* Pie de página */
 footer {
-    background-color: #b8c0ff;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed; /* Fijado al fondo de la pantalla */
-    bottom: 0px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* Creamos un nuevo contexto de apilamiento */
+    isolation: isolate;
 }
 
 /* Texto en el pie de página */
@@ -145,32 +145,63 @@ footer a {
 
 /* Enlaces legales */
 .footer-left a {
-    color: rgb(8, 0, 255); /* Azul brillante */
+    color: rgb(8, 0, 255);
 }
 
 /* Contenedor de iconos o imágenes */
 .imagenes_paginas {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 0 20px;
+    justify-content: center;
+    /* Centrar los iconos horizontalmente */
+    padding: 10px;
 }
 
-/* Iconos de redes sociales */
+/* Estilos para el contenedor de los iconos */
+.icono_redes_container {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    /* Aseguramos que el contenido no se desborde */
+    overflow: hidden;
+}
+
+/* Estilos para el círculo */
+.icono_redes_circulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Estilos para la imagen */
 .icono_redes {
-    width: 25px;
+    width: auto;
     height: auto;
+    max-width: 80%;
+    max-height: 80%;
+    position: relative;
+    /* Mayor prioridad para mostrarse encima del círculo */
+    z-index: 1;
 }
 
 /* Estilo para tablas */
 table {
     text-align: center;
-    margin: 30px 100px 100px 1000px; /* Margen bastante grande hacia la izquierda */
+    margin: 30px 100px 100px 1000px;
 }
 
 /* Sección del mapa */
 .mapa {
-    padding-bottom: 5%;
+    padding-bottom: 1%;
     position: static;
 }
 
@@ -183,7 +214,7 @@ table {
 /* Responsividad para pantallas medianas */
 @media screen and (max-width: 768px) {
     footer {
-        flex-direction: column; /* Cambia de fila a columna */
+        flex-direction: column;
     }
 
     .footer-left {
@@ -200,7 +231,7 @@ table {
 /* Responsividad para pantallas pequeñas */
 @media screen and (max-width: 480px) {
     footer p {
-        font-size: 0.8em; /* Reduce el tamaño del texto */
+        font-size: 0.8em;
     }
 }
 
@@ -280,6 +311,7 @@ a:hover {
 
 /* Estilo para la sección principal */
 #seccion-principal {
+    margin-bottom: 1%;
     background-color: white;
     padding: 20px;
     border-radius: 8px;
@@ -291,6 +323,11 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+}
+
+section h2{
+    font-weight: 900;
+
 }
 
 /* Tarjeta de servicio individual */
@@ -311,8 +348,9 @@ a:hover {
 
 /* Título del servicio */
 .servicio h3 {
+    font-weight: 900;
     margin-top: 0;
-    color: #333;
+    color: #000000;
 }
 
 /* Descripción del servicio */
@@ -347,13 +385,14 @@ a:hover {
 
 /* Título del producto */
 .producto h3 {
+    font-weight: 900;
     margin-top: 0;
     color: #333;
 }
 
 /* Descripción del producto */
 .producto p {
-    color: #666;
+    color: #000000;
     line-height: 1.4;
 }
 
@@ -361,3 +400,4 @@ a:hover {
 ul li {
     margin-bottom: 20px;
 }
+

@@ -9,6 +9,7 @@
         <meta name="lang" content="es">
         <title>INICIO</title>
         <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+        <link rel="icon" type="imae/x-icon" href="/imagenes/icono.png">
     </head>
 
     <body>
@@ -22,8 +23,7 @@
         <nav>
             <a href="../index.html" class="boton">Inicio</a>
             <a href="../views/contacto.html" class="boton">Contacto</a>
-            <a href="../views/presupuestos.html"
-                class="boton active">Presupuesto</a>
+            <a href="../views/presupuestos.html" class="boton active">Presupuesto</a>
             <a href="../views/productos.html" class="boton">Productos</a>
         </nav>
 
@@ -37,7 +37,7 @@
 
                 <div class="formulario-contacto">
                     <h2>Solicita más información</h2>
-                    <form id="miFormulario" action="../views/check_verify.html"
+                    <form id="miFormulario" action="#"
                         method="POST"> <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required>
                         <div id="nombre-error" class="error-message"></div>
@@ -70,22 +70,27 @@
             </section>
         </main>
 
-        <footer>
-            <div class="footer-left">
-                <p>&copy; 2025 </p>
-                <p>Calle alfonso XIII 41009 sevilla</p>
-                <a href="../views/aviso-legal.html">Aviso Legal</a>
-            </div>
-            <div class="imagenes_paginas">
-                <a href="https://www.facebook.com/?locale=es_ES"><img
-                        class="icono_redes" src="../imagenes/face.png"
-                        alt="Facebook"></a>
-                <a href="https://www.instagram.com/"><img class="icono_redes"
-                        src="../imagenes/instagram.png" alt="Instagram"></a>
-                <a href="https://x.com/home?lang=es"><img class="icono_redes"
-                        src="../imagenes/x.png" alt="Twitter"></a>
-            </div>
-        </footer>
+      <footer>
+        <div class="footer-left">
+            <p>&copy; 2025 </p>
+            <p> Av. de Hytasa, 71, 41006 Sevilla </p>
+            <a href="views/aviso-legal.html">Aviso Legal</a>
+        </div>
+        <div class="imagenes_paginas">
+            <a href="https://www.facebook.com/?locale=es_ES" class="icono_redes_container">
+                <div class="icono_redes_circulo"></div>
+                <img class="icono_redes" src="../imagenes/face.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/" class="icono_redes_container">
+                <div class="icono_redes_circulo"></div>
+                <img class="icono_redes" src="../imagenes/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://x.com/home?lang=es" class="icono_redes_container">
+                <div class="icono_redes_circulo"></div>
+                <img class="icono_redes" src="../imagenes/x.png" alt="Twitter">
+            </a>
+        </div>
+    </footer>
     </body>
 
 </html>
